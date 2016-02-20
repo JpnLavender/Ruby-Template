@@ -4,5 +4,5 @@ require 'sinatra/reloader' if development?
 require 'sinatra'
 require 'sinatra/json'
 require './models.rb'
-require 'open-url'
+require 'open-uri'
 require 'time'
