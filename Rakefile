@@ -1,3 +1,7 @@
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
-require './models/count.rb'
+namespace :db do
+  task :load_config do
+    require File.expand_path('../app', __FILE__)
+  end
+end
